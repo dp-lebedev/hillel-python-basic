@@ -81,6 +81,7 @@ elif len(divide_list) % 2 == 0:
     list_part1 = divide_list[: len(divide_list) // 2]
     list_part2 = divide_list[len(divide_list) // 2 :]
 else:
+    # Оскільки ціла частина від ділення непарного числа дорівнює порядковому номеру того елемента, який необхідно помістити в перший список (починаючи з елемента під номером 0) і при цьому цей елемент не входить до вибірки під час виконання зрізу колекеції - додаємо одиницю до необхідної кількості елементів в зрізі.
     part1_count = len(divide_list)//2 + 1
     list_part1 = (divide_list[:part1_count])
     list_part2 = (divide_list[part1_count:])
