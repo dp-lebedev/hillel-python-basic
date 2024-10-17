@@ -49,17 +49,48 @@
 
 # ДЗ 3.2
 # ======
-numbers = [12, 3, 4, 10]
-# numbers = [1]
-# numbers = []
-# numbers = [12, 3, 4, 10, 8]
-if len(numbers) == 0:
-    print("Список порожній, неможливо виконати переміщення елементу:", numbers)
-elif len(numbers) == 1:
-    print("Список містить лише один елемент, неможливо виконати переміщення елементу:", numbers)
+# numbers = [12, 3, 4, 10]
+# # numbers = [1]
+# # numbers = []
+# # numbers = [12, 3, 4, 10, 8]
+# if len(numbers) == 0:
+#     print("Список порожній, неможливо виконати переміщення елементу:", numbers)
+# elif len(numbers) == 1:
+#     print("Список містить лише один елемент, неможливо виконати переміщення елементу:", numbers)
+# else:
+#     print("Список до переміщення останнього елементу на першу позицію:", numbers)
+#     move_element = (numbers[-1])
+#     numbers.remove(move_element)
+#     numbers.insert(0, move_element)
+#     print("Список після переміщення останнього елементу на першу позицію:", numbers)
+
+# ДЗ 3.3
+# ======
+# divide_list = [1, 2, 3, 4, 5, 6]
+divide_list = [1, 2, 3]
+# divide_list = [1, 2, 3, 4, 5]
+# divide_list = [1]
+# divide_list = []
+if divide_list == []:
+    list_part1 = []
+    list_part2 = []
+elif len(divide_list) == 1:
+    list_part1 = divide_list
+    list_part2 = []
+elif len(divide_list) % 2 == 0:
+    list_part1 = divide_list[: len(divide_list) // 2]
+    list_part2 = divide_list[len(divide_list) // 2 :]
 else:
-    print("Список до переміщення останнього елементу на першу позицію:", numbers)
-    move_element = (numbers[-1])
-    numbers.remove(move_element)
-    numbers.insert(0, move_element)
-    print("Список після переміщення останнього елементу на першу позицію:", numbers)
+    print("Опрацювати!!!", len(divide_list)//2)
+result = [list_part1, list_part2]
+print(result)
+
+
+# nums = [1, 2, 3, 4, 5, 6]
+# part1 = nums[:len(nums)//2]
+# part2 = nums[len(nums)//2:]
+# print("aaa", len(nums)%2)
+# print(part1)
+# print(part2)
+# result = [part1, part2]
+# print(result)
