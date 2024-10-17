@@ -87,13 +87,3 @@ else:
 result = ([list_part1, list_part2])
 print("Початковий список має вигляд:", divide_list)
 print("Результат розділення початкового списку на два списки:", result)
-
-
-# nums = [1, 2, 3, 4, 5, 6]
-# part1 = nums[:len(nums)//2]
-# part2 = nums[len(nums)//2:]
-# print("aaa", len(nums)%2)
-# print(part1)
-# print(part2)
-# result = [part1, part2]
-# print(result)
