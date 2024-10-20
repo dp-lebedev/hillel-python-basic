@@ -34,35 +34,66 @@
 #
 # print("Змінений список:", list_1)
 
-# ДЗ 4.2
+# # ДЗ 4.2
+# # ======
+#
+# list_2 = [0, 1, 7, 2, 4, 8]
+# # list_2 = [1, 3, 5]
+# # list_2 = [6]
+# # list_2 = []
+#
+# # # Визначаємо кількість елементів в списку і додаємо це значення в змінну для подальшого використання.
+# list_2_len = len(list_2)
+#
+# print("Кількість елементів в списку:", list_2_len)
+#
+# # Припиняємо роботу програми, якщо кількість елементів в списку дорівнює нулю.
+# while list_2_len == 0:
+#     print("Значення останнього індексу визначити неможливо.")
+#     print("Зупинено подальше виконання коду програми.")
+#     break
+#
+# # Знаходимо парні індекси та виконуємо дії над ними.
+# if list_2_len >0:
+#     number_counter = 0
+#     print("Початкове значення змінної, до якої будуть додаватись значення парного індексу:", number_counter)
+#     for i in range(list_2_len):
+#         if i % 2 == 0:
+#             number_counter += list_2[i]
+#             print("Поточне значення змінної", number_counter)
+#     list_multiplier = list_2[-1]
+#     print("Значення множника:", list_multiplier)
+#
+#     list_2_result = number_counter * list_multiplier
+#     print("Фінальне значення (сума значень парних індексів помножена на значення останнього елементу індексу):", list_2_result)
+
+# ДЗ 4.3
 # ======
+import random
 
-list_2 = [0, 1, 7, 2, 4, 8]
-# list_2 = [1, 3, 5]
-# list_2 = [6]
-# list_2 = []
+# Випадково обираємо кількість елементів в списку
+random_list_count = random.randint(3, 10)
+print("Кількість елементів в списку, що буде створено:", random_list_count, "\n")
 
-# # Визначаємо кількість елементів в списку і додаємо це значення в змінну для подальшого використання.
-list_2_len = len(list_2)
+# Створюємо порожній список і додаємо в нього кількість елементів, визначену змінною random_list_count.
+# Кожен елемент, що додається має значення від 0 до 9.
+random_list = []
+for i in range (random_list_count):
+    random_list.append(random.randint(0, 9))
+print("Список елементів створеного списку:", random_list, "\n")
 
-print("Кількість елементів в списку:", list_2_len)
+# Зі створеного списку в окремі змінні заносимо значення першого, третього та другого з кінця елементу.
+random_list_member_p0 = random_list[0]
+random_list_member_p2 = random_list[2]
+random_list_member_m2 = random_list[-2]
+print("Перший, третій та другій з кінця елемент створеного списку:")
+print(random_list_member_p0, random_list_member_p2, random_list_member_m2, sep=', ')
+print()
 
-# Припиняємо роботу програми, якщо кількість елементів в списку дорівнює нулю.
-while list_2_len == 0:
-    print("Значення останнього індексу визначити неможливо.")
-    print("Зупинено подальше виконання коду програми.")
-    break
+# Створюємо власний список, до якого додаємо обрані вище три елементи.
+my_random_list = []
+my_random_list.append(random_list_member_p0)
+my_random_list.append(random_list_member_p2)
+my_random_list.append(random_list_member_m2)
 
-# Знаходимо парні індекси та виконуємо дії над ними.
-if list_2_len >0:
-    number_counter = 0
-    print("Початкове значення змінної, до якої будуть додаватись значення парного індексу:", number_counter)
-    for i in range(list_2_len):
-        if i % 2 == 0:
-            number_counter += list_2[i]
-            print("Поточне значення змінної", number_counter)
-    list_multiplier = list_2[-1]
-    print("Значення множника:", list_multiplier)
-
-    list_2_result = number_counter * list_multiplier
-    print("Фінальне значення (сума значень парних індексів помножена на значення останнього елементу індексу):", list_2_result)
+print("Власний список:", my_random_list)
