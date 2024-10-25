@@ -103,7 +103,6 @@ print(check_result)
 #
 # # Визначаємо максимальний індекс в рядку.
 # input_string_max_index = len(input_string_clean) - 1
-# print(input_string_max_index)
 #
 # # За потреби - обрізаємо рядок до 139 символів. Бо 140 символом буде знак hashtag.
 # if input_string_max_index >= 139:
