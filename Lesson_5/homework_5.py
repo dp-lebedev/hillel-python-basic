@@ -99,7 +99,7 @@ print(check_result)
 # for char in input_string:
 #     if char not in string.punctuation and char not in string.whitespace:
 #         input_string_clean += char
-# print("Рядок з великою першою буквою кожного слова, без символів пунктувації та пробілів:", input_string_clean)
+# print("Рядок з великою першою буквою кожного слова, без символів пунктуації та пробілів:", input_string_clean)
 #
 # # Визначаємо максимальний індекс в рядку.
 # input_string_max_index = len(input_string_clean) - 1
