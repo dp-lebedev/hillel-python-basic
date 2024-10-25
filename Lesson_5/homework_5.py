@@ -94,8 +94,8 @@ print(check_result)
 # # Робимо перші букви кожного слова великими.
 # input_string = input_string.title()
 #
-# input_string_clean = ""
 # # Прибираємо символи пунктуації та пробіли.
+# input_string_clean = ""
 # for char in input_string:
 #     if char not in string.punctuation and char not in string.whitespace:
 #         input_string_clean += char
