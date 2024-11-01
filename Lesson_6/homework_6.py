@@ -10,11 +10,11 @@ first_letter = input("Введіть початкову букву з діапа
 last_letter = input("Введіть останню букву з діапазону: ")
 
 # Визначаємо індекси введених букв.
-first_letter_index = string.ascii_letters.index((first_letter))
-last_letter_index = string.ascii_letters.index(last_letter)
+# first_letter_index = string.ascii_letters.index((first_letter))
+# last_letter_index = string.ascii_letters.index(last_letter)
 
-# print("Букви: ", first_letter, " - ", last_letter)
-# print("Індекси: ", first_letter_index, " ~ ", last_letter_index)
+print("Букви: ", first_letter, " - ", last_letter)
+print("Індекси: ", first_letter_index, " ~ ", last_letter_index)
 
 # Щоб включити до виводу на екран більшу з введених букв - додаємо +1 до другого елементу зрізу.
 if first_letter_index < last_letter_index:
@@ -23,17 +23,6 @@ elif first_letter_index > last_letter_index:
     print(f"Букви в обраному Вами діапазоні: {string.ascii_letters[last_letter_index:first_letter_index + 1]}")
 else:
     print(f"Ви ввели однакову першу та останню букви діапазону і це буква {first_letter}")
-
-# Код по якому є запитання, бо відпрацьовує не кожного разу.
-# print("Букви: ", first_letter, " - ", last_letter)
-# print("Індекси: ", first_letter_index, " ~ ", last_letter_index)
-#
-# if first_letter < last_letter:
-#     print(string.ascii_letters[first_letter_index:last_letter_index + 1])
-# elif first_letter > last_letter:
-#     print(string.ascii_letters[last_letter_index:first_letter_index + 1])
-# else:
-#     print(first_letter)
 
 # # ДЗ 6.2
 # # ------
