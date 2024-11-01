@@ -1,23 +1,23 @@
 # # ДЗ 7.1
 # # ------
-# def say_hi(name, age):
-#     return f"Hi. My name is {name} and I'm {age} years old"
-#
-# # Запит на перший набір, що складається з імені та віку.
-# user_name = input("Введіть 'Alex': ")
-# user_age = input("Введіть '32':")
-# # Викликаємо функцію і одразу в print виводимо результат її роботи.
-# print(say_hi(user_name, user_age))
-# assert say_hi(user_name, user_age) == "Hi. My name is Alex and I'm 32 years old", 'Test1'
-# print()
-#
-# # Запит на другий набір, що складається з імені та віку.
-# user_name = input("Введіть 'Frank': ")
-# user_age = input("Введіть '68':")
-# # Викликаємо функцію і результат її роботи записуємо в змінну, яку потім використовуємо для виводу результату.
-# return_from_def = say_hi(user_name, user_age)
-# print(return_from_def)
-# assert say_hi(user_name, user_age) == "Hi. My name is Frank and I'm 68 years old", 'Test2'
+def say_hi(name, age):
+    return f"Hi. My name is {name} and I'm {age} years old"
+
+# Запит на перший набір, що складається з імені та віку.
+user_name = input("Введіть 'Alex': ")
+user_age = input("Введіть '32':")
+# Викликаємо функцію і одразу в print виводимо результат її роботи.
+print(say_hi(user_name, user_age))
+assert say_hi(user_name, user_age) == "Hi. My name is Alex and I'm 32 years old", 'Test1'
+print()
+
+# Запит на другий набір, що складається з імені та віку.
+user_name = input("Введіть 'Frank': ")
+user_age = input("Введіть '68':")
+# Викликаємо функцію і результат її роботи записуємо в змінну, яку потім використовуємо для виводу результату.
+return_from_def = say_hi(user_name, user_age)
+print(return_from_def)
+assert say_hi(user_name, user_age) == "Hi. My name is Frank and I'm 68 years old", 'Test2'
 
 # # ДЗ 7.2
 # # ------
@@ -77,25 +77,25 @@
 # assert second_index("Hello, hello", "lo") == 10, 'Test4'
 # print('ОК')
 
-# ДЗ 7.4
-# ------
-
-def common_elements():
-    # Отримуємо список елементів, що діляться на 3.
-    divided_by_3 = set()
-    for i3 in range(100):
-        if i3 % 3 == 0:
-            divided_by_3.add(i3)
-    # Отримуємо список елементів, що діляться на 5.
-    divided_by_5 = set()
-    for i5 in range(100):
-        if i5 % 5 ==0:
-            divided_by_5.add(i5)
-    # Порівнюєм два списки і виводимо лише спільні елементи.
-    common_elements = divided_by_3 & divided_by_5
-
-    return common_elements
-
-
-print(common_elements())
-assert common_elements() == {0, 75, 45, 15, 90, 60, 30}
+# # ДЗ 7.4
+# # ------
+#
+# def common_elements():
+#     # Отримуємо список елементів, що діляться на 3.
+#     divided_by_3 = set()
+#     for i3 in range(100):
+#         if i3 % 3 == 0:
+#             divided_by_3.add(i3)
+#     # Отримуємо список елементів, що діляться на 5.
+#     divided_by_5 = set()
+#     for i5 in range(100):
+#         if i5 % 5 ==0:
+#             divided_by_5.add(i5)
+#     # Порівнюєм два списки і виводимо лише спільні елементи.
+#     common_elements = divided_by_3 & divided_by_5
+#
+#     return common_elements
+#
+#
+# print(common_elements())
+# assert common_elements() == {0, 75, 45, 15, 90, 60, 30}
