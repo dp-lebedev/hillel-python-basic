@@ -1,29 +1,29 @@
-# # ДЗ 8.1
-# # ------
-# def add_one(some_list):
-#     # Створюємо змінну, в яку послідовно записуємо елементи списку.
-#     string_temp = ""
-#     for i in some_list:
-#         string_temp += str(i)
-#     # Перетворюємо рядок на число і додаємо до нього одиницю.
-#     string_temp = int(string_temp) + 1
-#     # Виконуємо зворотнє перетворення числа на список.
-#     new_list = []
-#     for char in str(string_temp):
-#         new_list.append(int(char))
-#     # print(new_list)
-#     return(new_list)
-#
-# print(add_one([1, 2, 3, 4]))
-# print(add_one([9, 9, 9]))
-# print(add_one([0]))
-# print(add_one([9]))
-#
-# assert add_one([1, 2, 3, 4]) == [1, 2, 3, 5], 'Test1'
-# assert add_one([9, 9, 9]) == [1, 0, 0, 0], 'Test2'
-# assert add_one([0]) == [1], 'Test3'
-# assert add_one([9]) == [1, 0], 'Test4'
-# print("ОК")
+# ДЗ 8.1
+# ------
+def add_one(some_list):
+    # Створюємо змінну, в яку послідовно записуємо елементи списку.
+    string_temp = ""
+    for i in some_list:
+        string_temp += str(i)
+    # Перетворюємо рядок на число і додаємо до нього одиницю.
+    string_temp = int(string_temp) + 1
+    # Виконуємо зворотнє перетворення числа на список.
+    new_list = []
+    for char in str(string_temp):
+        new_list.append(int(char))
+    # print(new_list)
+    return(new_list)
+
+print(add_one([1, 2, 3, 4]))
+print(add_one([9, 9, 9]))
+print(add_one([0]))
+print(add_one([9]))
+
+assert add_one([1, 2, 3, 4]) == [1, 2, 3, 5], 'Test1'
+assert add_one([9, 9, 9]) == [1, 0, 0, 0], 'Test2'
+assert add_one([0]) == [1], 'Test3'
+assert add_one([9]) == [1, 0], 'Test4'
+print("ОК")
 
 # # ДЗ 8.2
 # # ------
