@@ -1,5 +1,5 @@
-# ДЗ 10.1
-# -------
+# # ДЗ 10.1
+# # -------
 def pow(x):
     return x ** 2
 
@@ -26,7 +26,7 @@ print('OK')
 
 # # ДЗ 10.2
 # # -------
-# from string import ascii_letters, punctuation, digits
+# from string import punctuation, digits
 # def first_word(text):
 #     """ Пошук першого слова """
 #     text_clear = ""
